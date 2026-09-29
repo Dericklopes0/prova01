@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Pizzaria Unipê</title>
+</head>
+<body>
+  <header>
+    <h1>Reservas e Contato</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Início</a></li>
+        <li><a href="menu.html">Cardápio</a></li>
+        <li><a href="contato.html">Reservas e Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Faça sua reserva</h2>
+      <article>
+        <form action="#" method="get">
+          <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex.: Derick Isaías" required>
+          </p>
+          <p>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+          </p>
+          <p>
+            <label for="pessoas">Pessoas (1 a 12):</label>
+            <input type="range" id="pessoas" name="pessoas" min="1" max="12" value="2">
+          </p>
+          <p>
+            <label for="sabor">Sabor favorito:</label>
+            <input type="text" id="sabor" name="sabor" list="sabores" placeholder="Escolha um sabor" required>
+            <datalist id="sabores">
+              <option value="Margherita">
+              <option value="Calabresa">
+            </datalist>
+          </p>
+          <p>
+            <label for="foto">Foto (opcional):</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+          </p>
+          <p>
+            <button type="submit">Enviar</button>
+          </p>
+        </form>
+      </article>
+    </section>
+
+    <aside>
+      <h2>Onde estamos</h2>
+      <address>
+        Rodovia BR-230, Km 22, s/n &ndash; João Pessoa, <abbr title="João Pessoa">PB</abbr><br>
+        Telefone: (83) 4000-0000
+      </address>
+      <details>
+        <summary>Horário de funcionamento</summary>
+        <p>Terça a domingo, das 17h às 23h30.</p>
+      </details>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Pizzaria Unipê</p>
+  </footer>
+</body>
+</html>
